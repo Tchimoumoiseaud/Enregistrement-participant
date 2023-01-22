@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --body-color : #e4e9f7;
+    --tran-05: all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+    transform: var(--tran-05);
+}
+
+.box {
+    margin-top: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0,0.5);
+    border: 1px solid rgba(0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0);
+}
+
+.form {
+    padding: 40px;
+}
+
+.form h2 {
+    position: relative;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.form h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 150px;
+    height: 4px;
+    background: black;
+}
+
+.form .inputbox {
+    margin-top: 20px;
+}
+
+.form .inputbox input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form .img {
+    margin-top: 20px;
+}
+
+.form .inputbox input[type="submit"]{
+    cursor: pointer;
+    background: #fffd87;
+}
+
+.form .inputbox input[type="button"]{
+    cursor: pointer;
+    background: #00d2ff;
+}
+
+.form .selectbox {
+    margin-top: 20px;
+}
+
+.sucess {
+    color: green;
+}
